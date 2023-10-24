@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: f36c72c738c55f741afcd674a0b1245f
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 50279
+  packageName: brainCloud Space Shooter
+  packageVersion: 1.1.0
+  assetPath: Assets/Materials/vehicle_playerShip_glass_mat.mat
+  uploadId: 284523

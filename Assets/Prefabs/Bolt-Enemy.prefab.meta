@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 11e27c26ac87b40f0a62ec40d7261989
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 50279
+  packageName: brainCloud Space Shooter
+  packageVersion: 1.1.0
+  assetPath: Assets/Prefabs/Bolt-Enemy.prefab
+  uploadId: 284523

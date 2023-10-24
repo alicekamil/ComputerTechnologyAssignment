@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 3dc7455402dfa462b89a4bbd513955e9
+AudioImporter:
+  serializedVersion: 4
+  format: -1
+  quality: .5
+  stream: 1
+  3D: 0
+  forceToMono: 0
+  useHardware: 0
+  loopable: 0
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 50279
+  packageName: brainCloud Space Shooter
+  packageVersion: 1.1.0
+  assetPath: Assets/Audio/explosion_asteroid.wav
+  uploadId: 284523

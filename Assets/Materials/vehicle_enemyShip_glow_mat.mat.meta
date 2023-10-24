@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 1e0350b97c61bfb4a91c62d756d01727
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 50279
+  packageName: brainCloud Space Shooter
+  packageVersion: 1.1.0
+  assetPath: Assets/Materials/vehicle_enemyShip_glow_mat.mat
+  uploadId: 284523

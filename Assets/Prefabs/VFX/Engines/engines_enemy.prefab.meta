@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 93bdcaae53f95461785a8eeb8c01bc61
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 50279
+  packageName: brainCloud Space Shooter
+  packageVersion: 1.1.0
+  assetPath: Assets/Prefabs/VFX/Engines/engines_enemy.prefab
+  uploadId: 284523

@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 1b4bad6cea5a94611b21f9757fe41444
+NativeFormatImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 50279
+  packageName: brainCloud Space Shooter
+  packageVersion: 1.1.0
+  assetPath: Assets/Materials/fx_enemyShip_engines_mat.mat
+  uploadId: 284523
