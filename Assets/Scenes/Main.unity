@@ -655,6 +655,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484c0f78f67ca574da52a042e0311387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_speed: 10
+  m_tilt: 4
+  boundary:
+    xMin: -6
+    xMax: 6
+    zMin: -4
+    zMax: 8
 --- !u!1 &1624763577
 GameObject:
   m_ObjectHideFlags: 0
