@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     private float m_tilt = 4;
     private Rigidbody rB;
 
+    private float fireRate = 0.25f;
+    private float nextFire = 0.0f;
+    public GameObject shot;
+    public Transform shotSpawn;
     public Boundary boundary;
 
     [System.Serializable]
@@ -21,6 +25,15 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rB = GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButton(0) && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+        }
     }
 
     private void FixedUpdate()
