@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float m_tilt = 4;
     private Rigidbody rB;
+    private AudioSource audio;
 
     private float fireRate = 0.25f;
     private float nextFire = 0.0f;
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rB = GetComponent<Rigidbody>();
+        audio = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -33,6 +35,7 @@ public class PlayerController : MonoBehaviour
         {
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+            audio.Play();
         }
     }
 
