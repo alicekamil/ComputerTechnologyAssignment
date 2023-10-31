@@ -20,10 +20,15 @@ public class GameManager : MonoBehaviour
     private float startWait;
     [SerializeField] 
     private float waveWait;
-
+    
+    private bool gameOver;
+    private bool restart;
     private int score;
     public TextMeshProUGUI scoreText;
-
+    public Button restartButton;
+    public TextMeshProUGUI gameOverText;
+    
+    
     public GameObject hazard;
 
     private void Awake()
@@ -37,9 +42,13 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        gameOver = false;
+        restart = false;
+        //restartButton.gameObject.SetActive(false);
+        
         score = 0;
         UpdateScore();
-        StartCoroutine(SpawnWaves());
+        //StartCoroutine(SpawnWaves());
     }
 
     IEnumerator SpawnWaves()

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 867130649289226118}
   - component: {fileID: 8593901804106265752}
   - component: {fileID: 4990985485637670194}
-  - component: {fileID: 8960079842000896323}
+  - component: {fileID: 5361483816952456782}
   m_Layer: 0
   m_Name: Asteroid01
   m_TagString: Enemy
@@ -79,7 +79,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -115,7 +115,7 @@ MonoBehaviour:
   explosion: {fileID: 100004, guid: a6d58f54ce5934781962a4f887e834f3, type: 3}
   playerExplosion: {fileID: 100008, guid: 3455fe69f7ddc4604b95bf9b0a1e88d7, type: 3}
   scoreValue: 1
---- !u!114 &8960079842000896323
+--- !u!114 &5361483816952456782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,10 +124,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 150346697230154891}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f8e7e9977748864ab912e8b0a754abc, type: 3}
+  m_Script: {fileID: 11500000, guid: 12ac2d07d2f6418d926c00b05bf61932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -5
+  speed: 10
 --- !u!1001 &958866464060971158
 PrefabInstance:
   m_ObjectHideFlags: 0

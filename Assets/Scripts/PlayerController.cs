@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         audio = GetComponent<AudioSource>();
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (Input.GetMouseButton(0) && Time.time > nextFire)
         {
@@ -58,4 +58,5 @@ public class PlayerController : MonoBehaviour
               
 
     }
+  */  
 }
