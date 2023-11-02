@@ -38,11 +38,11 @@ public partial class @Move: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""PlayerShoot"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""2e7313e2-1374-488b-be3f-2f6c8ac34b48"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold"",
                     ""initialStateCheck"": true
                 }
             ],
@@ -106,7 +106,7 @@ public partial class @Move: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""bdab12ff-2007-4a7b-bc60-014156f45b58"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""PlayerShoot"",
