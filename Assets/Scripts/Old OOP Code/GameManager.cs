@@ -4,32 +4,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Random = UnityEngine.Random;
+using Unity.Entities;
+
 
 public class GameManager : MonoBehaviour
 {
+    private EntityQuery playerQuery;
+
+    private GameObject playerPrefab;
     public static GameManager Instance { get; private set; }
 
-    [SerializeField] 
+    /*
+     //public GameObject hazard;
+
+    [SerializeField]
     private int hazardCount = 10;
     [SerializeField]
     private Vector3 spawnValues;
-    [SerializeField] 
+    [SerializeField]
     private float spawnWait;
     [SerializeField]
     private float startWait;
-    [SerializeField] 
+    [SerializeField]
     private float waveWait;
-    
+    */
+
     private bool gameOver;
-    private bool restart;
+    public TextMeshProUGUI gameOverText;
+    /*private bool restart;
     private int score;
     public TextMeshProUGUI scoreText;
     public Button restartButton;
-    public TextMeshProUGUI gameOverText;
     
-    
-    public GameObject hazard;
+    */
 
     private void Awake()
     {
@@ -38,20 +45,61 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        gameOver = false;
+        gameOverText.SetText("");
     }
 
     private void Start()
     {
-        gameOver = false;
-        restart = false;
-        //restartButton.gameObject.SetActive(false);
+        playerQuery =
+            World.DefaultGameObjectInjectionWorld.EntityManager.CreateEntityQuery(
+                ComponentType.ReadOnly<PlayerTag>());
         
-        score = 0;
-        UpdateScore();
+        //restartButton.gameObject.SetActive(false);
+        //score = 0;
+        //UpdateScore();
         //StartCoroutine(SpawnWaves());
     }
 
-    IEnumerator SpawnWaves()
+    private void Update()
+    {
+        if (playerQuery.IsEmpty && Time.time > 2f)
+        {
+            GameOver();
+        }
+    }
+
+    private void GameOver()
+    {
+        gameOverText.SetText("GAME OVER");
+        gameOver = true;
+        //restartButton.gameObject.SetActive(true);
+    }
+
+    /*public void Restart()
+    {
+        //SceneManager.LoadScene(0);
+
+        /*var entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
+
+        entityManager.DestroyEntity(entityManager.UniversalQuery);
+        World.DisposeAllWorlds();
+        DefaultWorldInitialization.Initialize("Default World", false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+
+        gameOverText.text = "";
+        restartButton.gameObject.SetActive(false);
+        */
+
+        /*World.DefaultGameObjectInjectionWorld.EntityManager.Instantiate();
+        playerQuery =
+            World.DefaultGameObjectInjectionWorld.EntityManager.CreateEntityQuery(
+                ComponentType.ReadOnly<PlayerTag>());
+    }
+
+
+
+    /*IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
         while(true)
@@ -77,4 +125,7 @@ public class GameManager : MonoBehaviour
     {
         scoreText.text = "Score " + score;
     }
+    */
+        
 }
+

@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 3012130152903585900}
   - component: {fileID: 8518173145828876593}
   - component: {fileID: 867130649289226118}
-  - component: {fileID: 8593901804106265752}
-  - component: {fileID: 4990985485637670194}
   - component: {fileID: 5361483816952456782}
   m_Layer: 0
   m_Name: Asteroid01
@@ -87,34 +85,6 @@ CapsuleCollider:
   m_Height: 1.69
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8593901804106265752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150346697230154891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb7a221b2cf16f43a934ab574826020, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tumble: 5
---- !u!114 &4990985485637670194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150346697230154891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d1e38a9459a22f4f9268dbc5cb7ac38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosion: {fileID: 100004, guid: a6d58f54ce5934781962a4f887e834f3, type: 3}
-  playerExplosion: {fileID: 100008, guid: 3455fe69f7ddc4604b95bf9b0a1e88d7, type: 3}
-  scoreValue: 1
 --- !u!114 &5361483816952456782
 MonoBehaviour:
   m_ObjectHideFlags: 0

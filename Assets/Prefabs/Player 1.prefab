@@ -9673,7 +9673,6 @@ GameObject:
   - component: {fileID: 1156748132826072801}
   - component: {fileID: 934798038388570690}
   - component: {fileID: 779917866246183519}
-  - component: {fileID: 1127594256247868764}
   - component: {fileID: 7690753126187086674}
   - component: {fileID: 3650917245237626048}
   - component: {fileID: 1183507050198010264}
@@ -9802,27 +9801,6 @@ CapsuleCollider:
   m_Height: 1.79
   m_Direction: 2
   m_Center: {x: 0.0006894469, y: -0.0045119673, z: 0}
---- !u!114 &1127594256247868764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7284492066310680014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 484c0f78f67ca574da52a042e0311387, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_speed: 10
-  m_tilt: 4
-  shot: {fileID: 1600749228696171974, guid: f4ec271e525e14ca9927a07e6a2e153d, type: 3}
-  shotSpawn: {fileID: 8416060620562616696}
-  boundary:
-    xMin: -6
-    xMax: 6
-    zMin: -4
-    zMax: 8
 --- !u!82 &7690753126187086674
 AudioSource:
   m_ObjectHideFlags: 0

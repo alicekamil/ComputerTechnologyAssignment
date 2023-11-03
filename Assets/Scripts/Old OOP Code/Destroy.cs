@@ -27,7 +27,7 @@ public class Destroy : MonoBehaviour
         {
             Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
         }
-        GameManager.Instance.AddScore(scoreValue);
+        //GameManager.Instance.AddScore(scoreValue);
         Destroy(other.gameObject);
         Destroy(gameObject);
     }
