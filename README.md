@@ -1,4 +1,4 @@
-# ComputerTechnologyAssignment
+# SPACEDOTS
 
 ## How the implementation makes efficient use of computer hardware
 
