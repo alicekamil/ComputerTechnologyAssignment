@@ -19,3 +19,5 @@ ECS architecture:
   
 ## How code was optimized based on findings from using a profiler
 
+* Implemented my own AABB- intersection checking instead of applying physics and collision
+* Using this bound checking in a system and letting it utilize jobs and the burst compiler improved performance of the system
