@@ -17,3 +17,5 @@ ECS architecture:
 * Both player and the asteroids has componentdata(speed, inputs) with their separate tags.
 * Systems operate on those components; movement, input, collision etc. Theres also pure game systems that handles spawning and randomization of the spawning.
   
+## How code was optimized based on findings from using a profiler
+
